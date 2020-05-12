@@ -1,0 +1,11 @@
+import sqlite3
+
+conn = sqlite3.connect(‘chinook.sqlite’)
+c = conn.cursor()
+
+
+
+query = (“insert into track(mediatypeid, name, composer, milliseconds, Bytes, UnitPrice) values (3504, "Artist", "A Boogie Wit Da Hoodie", 2400000, 4000000, 9.99“)
+
+For row in c.execute(query):
+  Print(row)
